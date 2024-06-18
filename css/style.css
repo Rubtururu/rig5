@@ -1,22 +1,16 @@
 /* General */
 body {
-    background-color: #181818;
-    color: #e0e0e0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
     min-width: 1213px;
     width: auto !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
 }
 
 /* Logo */
 .logo {
     margin-right: 10px;
-    animation: spin 3s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 /* Tables */
@@ -29,29 +23,29 @@ table.light tr th {
 }
 
 table.light thead tr th {
-    background: linear-gradient(45deg, #00b4d8, #90e0ef);
+    background: linear-gradient(45deg, #ff6f61, #ff9e80);
     font-size: 14px;
     font-weight: 700;
-    color: #e0f7fa;
+    color: #ffffff;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 15px;
-    border-bottom: 2px solid #00b4d8;
+    border-bottom: 2px solid #ff6f61;
 }
 
 table.light tr td {
     padding: 15px;
     font-size: 18px;
-    color: #e0f7fa;
+    color: #ffffff;
     font-weight: 700;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 111, 97, 0.1);
     vertical-align: middle;
     border-bottom: 1px solid #444;
 }
 
 /* Table Hover Effect */
 table.light tr:hover td {
-    background: rgba(0, 180, 216, 0.1);
+    background: rgba(255, 111, 97, 0.2);
     transition: background 0.3s;
 }
 
@@ -62,8 +56,8 @@ table.light tr:hover td {
     font-weight: 700;
     padding: 10px 0;
     margin: 0 0 20px 0;
-    color: #00b4d8;
-    text-shadow: 2px 2px #90e0ef;
+    color: #ff6f61;
+    text-shadow: 2px 2px #ff9e80;
 }
 
 /* Marketplace */
@@ -74,18 +68,18 @@ table.light tr:hover td {
 /* Divider */
 .divider {
     margin: 20px 0;
-    border-top: 2px solid #00b4d8;
+    border-top: 2px solid #ff6f61;
 }
 
 .divider_small {
     margin: 5px 0;
-    border-top: 1px solid #90e0ef;
+    border-top: 1px solid #ff9e80;
 }
 
 /* Progress */
 .progress {
     height: 1.5rem;
-    background: #00b4d8;
+    background: #ff6f61;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -94,7 +88,7 @@ table.light tr:hover td {
 .beauty_button, .beauty_button_mid, .beauty_button_big {
     padding: 15px;
     color: #ffffff;
-    background-color: #00b4d8;
+    background-color: #ff6f61;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
@@ -104,7 +98,7 @@ table.light tr:hover td {
 }
 
 .beauty_button:hover, .beauty_button_mid:hover, .beauty_button_big:hover {
-    background-color: #90e0ef;
+    background-color: #ff9e80;
     transform: scale(1.05);
 }
 
@@ -125,10 +119,10 @@ table.light tr:hover td {
     width: 15.5rem;
     margin: 10px;
     padding: 20px;
-    background-color: #222;
+    background-color: #333;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    color: #e0f7fa;
+    color: #ffffff;
 }
 
 .card:hover {
@@ -143,7 +137,7 @@ table.light tr:hover td {
     font-size: 16px;
     padding: 4px;
     color: #ffffff;
-    background-color: #333;
+    background-color: #555;
     display: block;
     width: 42px;
     height: 30px;
@@ -153,7 +147,7 @@ table.light tr:hover td {
 /* Mining Animation */
 .mining-anim {
     border-radius: 10px;
-    background: linear-gradient(to right, #000, #333);
+    background: linear-gradient(to right, #000, #444);
     padding: 15px;
     width: 730px;
     height: 430px;
@@ -179,12 +173,6 @@ table.light tr:hover td {
     left: 0;
     font-size: 14px;
     width: 100%;
-    animation: fadeIn 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
 }
 
 .static-anim ul {
@@ -210,7 +198,7 @@ table.light tr:hover td {
 /* Dos Mining */
 .dos-mining {
     width: 100%;
-    background-color: #ffab00;
+    background-color: #ffd54f;
     color: #000;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -225,7 +213,7 @@ table.light tr:hover td {
 #balance, #prodPerSec {
     font-weight: 800;
     font-size: 20px;
-    color: #00b4d8;
+    color: #ff6f61;
 }
 
 /* Claymore Colors */
@@ -245,16 +233,16 @@ table.light tr:hover td {
 /* Headers */
 .h6, h6 {
     font-size: 1rem;
-    color: #00b4d8;
+    color: #ff6f61;
 }
 
 /* Jumbotron */
 .jumbotron {
     padding: 2rem 2rem;
-    background: #222;
+    background: #333;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    color: #e0f7fa;
+    color: #ffffff;
 }
 
 /* Leaderboard */
@@ -262,10 +250,10 @@ table.light tr:hover td {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #222;
+    background: #333;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    color: #e0f7fa;
+    color: #ffffff;
 }
 
 /* Market Buttons */
@@ -278,7 +266,7 @@ table.light tr:hover td {
 .ico_box {
     display: inline-block;
     height: 320px;
-    background-color: #333;
+    background-color: #555;
     width: 100%;
     border-radius: 10px;
     padding: 15px;
@@ -313,7 +301,7 @@ table.light tr:hover td {
     display: inline-block;
     width: 100%;
     font-size: 30px;
-    color: #00b4d8;
+    color: #ff6f61;
 }
 
 .ico_pot_eth, .ico_pot_yours {
@@ -329,7 +317,7 @@ table.light tr:hover td {
     display: inline-block;
     width: 33%;
     font-size: 12px;
-    color: #00b4d8;
+    color: #ff6f61;
 }
 
 .ico_pot {
@@ -354,7 +342,7 @@ table.light tr:hover td {
 .ico-progress {
     width: 90%;
     margin: auto;
-    background: #00b4d8;
+    background: #ff6f61;
     height: 20px;
     border-radius: 5px;
     overflow: hidden;
@@ -395,7 +383,7 @@ table.light tr:hover td {
     appearance: none;
     width: 25px;
     height: 25px;
-    background: #00b4d8;
+    background: #ff6f61;
     cursor: pointer;
     border-radius: 50%;
 }
