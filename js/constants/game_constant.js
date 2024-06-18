@@ -54,9 +54,9 @@ rigData[8] = {price: 100000000000000,  eth:  0.009,         prod: 30000000,     
 */
 boostData = [];
 
-boostData[0] = {bonus: 30, price: 0.01};
-boostData[1] = {bonus: 50, price: 0.02};
-boostData[2] = {bonus: 100, price: 0.03};
+boostData[0] = {bonus: 30, price: 0.001};
+boostData[1] = {bonus: 50, price: 0.002};
+boostData[2] = {bonus: 100, price: 0.003};
 
 /*
         troopData[0] = TroopData(1,     0,     100000,   0);
