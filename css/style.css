@@ -1,7 +1,7 @@
 /* General */
 body {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #181818;
+    color: #e0e0e0;
     min-width: 1213px;
     width: auto !important;
     font-family: 'Roboto', sans-serif;
@@ -29,29 +29,29 @@ table.light tr th {
 }
 
 table.light thead tr th {
-    background: linear-gradient(45deg, #ff4081, #ff79b0);
+    background: linear-gradient(45deg, #00b4d8, #90e0ef);
     font-size: 14px;
     font-weight: 700;
-    color: #ffffff;
+    color: #e0f7fa;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 15px;
-    border-bottom: 2px solid #ff4081;
+    border-bottom: 2px solid #00b4d8;
 }
 
 table.light tr td {
     padding: 15px;
     font-size: 18px;
-    color: #ffffff;
+    color: #e0f7fa;
     font-weight: 700;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.1);
     vertical-align: middle;
     border-bottom: 1px solid #444;
 }
 
 /* Table Hover Effect */
 table.light tr:hover td {
-    background: rgba(255, 64, 129, 0.1);
+    background: rgba(0, 180, 216, 0.1);
     transition: background 0.3s;
 }
 
@@ -62,8 +62,8 @@ table.light tr:hover td {
     font-weight: 700;
     padding: 10px 0;
     margin: 0 0 20px 0;
-    color: #ff4081;
-    text-shadow: 2px 2px #ff79b0;
+    color: #00b4d8;
+    text-shadow: 2px 2px #90e0ef;
 }
 
 /* Marketplace */
@@ -74,44 +74,27 @@ table.light tr:hover td {
 /* Divider */
 .divider {
     margin: 20px 0;
-    border-top: 2px solid #ff4081;
+    border-top: 2px solid #00b4d8;
 }
 
 .divider_small {
     margin: 5px 0;
-    border-top: 1px solid #ff79b0;
+    border-top: 1px solid #90e0ef;
 }
 
 /* Progress */
 .progress {
     height: 1.5rem;
-    background: #ff4081;
+    background: #00b4d8;
     border-radius: 5px;
     overflow: hidden;
-    position: relative;
-}
-
-.progress::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(255, 64, 129, 0.2), rgba(255, 121, 176, 0.2));
-    animation: progress-animation 2s linear infinite;
-}
-
-@keyframes progress-animation {
-    0% { left: 0; }
-    100% { left: 100%; }
 }
 
 /* Buttons */
 .beauty_button, .beauty_button_mid, .beauty_button_big {
     padding: 15px;
     color: #ffffff;
-    background-color: #ff4081;
+    background-color: #00b4d8;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
@@ -121,7 +104,7 @@ table.light tr:hover td {
 }
 
 .beauty_button:hover, .beauty_button_mid:hover, .beauty_button_big:hover {
-    background-color: #ff79b0;
+    background-color: #90e0ef;
     transform: scale(1.05);
 }
 
@@ -142,10 +125,10 @@ table.light tr:hover td {
     width: 15.5rem;
     margin: 10px;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: #222;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    color: #fff;
+    color: #e0f7fa;
 }
 
 .card:hover {
@@ -160,7 +143,7 @@ table.light tr:hover td {
     font-size: 16px;
     padding: 4px;
     color: #ffffff;
-    background-color: #424242;
+    background-color: #333;
     display: block;
     width: 42px;
     height: 30px;
@@ -177,7 +160,7 @@ table.light tr:hover td {
     display: inline-block;
     float: left;
     margin-bottom: 20px;
-    color: #c0c0c0;
+    color: #b0bec5;
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
@@ -227,7 +210,7 @@ table.light tr:hover td {
 /* Dos Mining */
 .dos-mining {
     width: 100%;
-    background-color: #01abab;
+    background-color: #ffab00;
     color: #000;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -236,28 +219,21 @@ table.light tr:hover td {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
 }
 
 /* Balance and Production */
 #balance, #prodPerSec {
     font-weight: 800;
     font-size: 20px;
-    color: #ff4081;
+    color: #00b4d8;
 }
 
 /* Claymore Colors */
-.claymore-green { color: #00c853; }
-.claymore-blue { color: #00b8d4; }
+.claymore-green { color: #00e676; }
+.claymore-blue { color: #00b0ff; }
 .claymore-purple { color: #d500f9; }
 .claymore-gold { color: #ffab00; }
-.claymore-red { color: #d50000; }
+.claymore-red { color: #ff1744; }
 
 /* System Stat */
 .system_stat {
@@ -269,14 +245,16 @@ table.light tr:hover td {
 /* Headers */
 .h6, h6 {
     font-size: 1rem;
+    color: #00b4d8;
 }
 
 /* Jumbotron */
 .jumbotron {
     padding: 2rem 2rem;
-    background: #1e1e1e;
+    background: #222;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #e0f7fa;
 }
 
 /* Leaderboard */
@@ -284,9 +262,10 @@ table.light tr:hover td {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #1e1e1e;
+    background: #222;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #e0f7fa;
 }
 
 /* Market Buttons */
@@ -299,7 +278,7 @@ table.light tr:hover td {
 .ico_box {
     display: inline-block;
     height: 320px;
-    background-color: #424242;
+    background-color: #333;
     width: 100%;
     border-radius: 10px;
     padding: 15px;
@@ -334,7 +313,7 @@ table.light tr:hover td {
     display: inline-block;
     width: 100%;
     font-size: 30px;
-    color: #ff4081;
+    color: #00b4d8;
 }
 
 .ico_pot_eth, .ico_pot_yours {
@@ -350,7 +329,7 @@ table.light tr:hover td {
     display: inline-block;
     width: 33%;
     font-size: 12px;
-    color: #ff4081;
+    color: #00b4d8;
 }
 
 .ico_pot {
@@ -375,7 +354,7 @@ table.light tr:hover td {
 .ico-progress {
     width: 90%;
     margin: auto;
-    background: #ff4081;
+    background: #00b4d8;
     height: 20px;
     border-radius: 5px;
     overflow: hidden;
@@ -416,7 +395,7 @@ table.light tr:hover td {
     appearance: none;
     width: 25px;
     height: 25px;
-    background: #ff4081;
+    background: #00b4d8;
     cursor: pointer;
     border-radius: 50%;
 }
