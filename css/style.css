@@ -1,4 +1,12 @@
+body {
+    background-color: #000;
+    color: #fff;
+    min-width: 1213px;
+    width: auto !important;
+    font-family: 'Arial', sans-serif;
+}
 
+/* Estilos generales */
 .logo {
     margin-right: 5px;
 }
@@ -11,50 +19,65 @@ table.light tr th {
     border-radius: 5px 0 0 0;
 }
 
-
 table.light thead tr th {
-    background: 0 0;
-    font-size: 10px;
-    font-weight: 400;
-    color: #959595;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    font-weight: 700;
+    color: #ff4081;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 15px;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid #ff4081;
 }
 
 table.light tr td {
     padding: 15px;
     font-size: 16px;
-    color: #524e4e;
+    color: #bdbdbd;
     font-weight: 700;
-    background: 0 0;
+    background: rgba(255, 255, 255, 0.1);
     vertical-align: middle;
 }
 
 .minestat h3 {
     text-align: left;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     padding: 0;
-    margin: 0;
+    margin: 0 0 20px 0;
+    color: #ff4081;
 }
 
-.marketplace{
+.marketplace {
     padding-bottom: 100px;
 }
 
 .divider {
     margin: 20px 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ff4081;
 }
 
 .divider_small {
     margin: 5px 0;
+    border-top: 1px solid #ff4081;
 }
 
 .progress {
     height: 1.5rem;
+    background: #ff4081;
+}
+
+.beauty_button, .beauty_button_mid, .beauty_button_big {
+    padding: 10px;
+    color: #fff;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.beauty_button:hover, .beauty_button_mid:hover, .beauty_button_big:hover {
+    background-color: #ff79b0;
 }
 
 .beauty_button {
@@ -69,114 +92,120 @@ table.light tr td {
     width: 97%;
 }
 
+.card {
+    width: 15.5rem;
+    margin: 10px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-.card 
-{
- width: 15.5rem;
- margin: 2px;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .owned_card {
-    position:absolute;
-    left:0px;
-    top:0px;
-    font-size:16px;
-    padding-left: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    padding: 4px;
     color: #ffffff;
-    background-color: rgb(42, 43, 42);
+    background-color: #424242;
     display: block;
     width: 42px;
     height: 30px;
     border-radius: 0 0 10px 0;
 }
 
-    .mining-anim {
-        border-radius: 2px;
-        background-color: #000;
-        background-position: left top;
-        background-size: 400px ;
-        padding: 5px;
-        width: 730px;
-        height: 430px;
-        display: inline-block;
-        float: left;
-        margin-bottom: 5px;
-        color: #c0c0c0;
-        font-size: 13px;
-        font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
-        position: relative;
-    }
+.mining-anim {
+    border-radius: 5px;
+    background-color: #000;
+    background-position: left top;
+    background-size: 400px;
+    padding: 15px;
+    width: 730px;
+    height: 430px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 5px;
+    color: #c0c0c0;
+    font-size: 13px;
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Bitstream Vera Sans Mono', monospace;
+    position: relative;
+}
 
-    .console-text{
-        display: inline-block;
-        height: 230px;
-    }
+.console-text {
+    display: inline-block;
+    height: 230px;
+}
 
-    .static-anim {
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        font-size: 14px;
-        width: 100%;
-    }
+.static-anim {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    width: 100%;
+}
 
-    .static-anim ul{
-        list-style-type: none;
-    }
-    
+.static-anim ul {
+    list-style-type: none;
+}
 
-    .network-stat {
-        display: inline-block;
-        position: absolute;
-        width:55%;
-        top:0px;
-    }
-    .pvp-stat {
-        display: inline-block;
-        width:40%;
-        position: absolute;
-        right:0px;
-    }
+.network-stat {
+    display: inline-block;
+    position: absolute;
+    width: 55%;
+    top: 0;
+}
 
-    .dos-mining{
-        width: 100%;  
-        background-color:  #01abab;
-        color: #000;
-        margin-bottom: 10px;
-        margin-top:10px;
-    }
+.pvp-stat {
+    display: inline-block;
+    width: 40%;
+    position: absolute;
+    right: 0;
+}
 
-    #balance{
-        font-weight: 800; 
-    }
-    #prodPerSec{
-        font-weight: 800; 
-    }
+.dos-mining {
+    width: 100%;
+    background-color: #01abab;
+    color: #000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
 
+#balance, #prodPerSec {
+    font-weight: 800;
+}
 
+.claymore-green {
+    color: #00c853;
+}
 
+.claymore-blue {
+    color: #00b8d4;
+}
 
-    .claymore-green{
-    color: #006700; 
-    }
-    .claymore-blue{
-    color: #006666; 
-    }
-    .claymore-purple{
-    color: #7d0075; 
-    }
-    .claymore-gold{
-        color: #c09a28; 
-    }
-    .claymore-red{
-        color: #800000; 
-    }
+.claymore-purple {
+    color: #d500f9;
+}
 
+.claymore-gold {
+    color: #ffab00;
+}
+
+.claymore-red {
+    color: #d50000;
+}
 
 .system_stat {
     height: 220px;
-    margin-left:20px;
-    display: inline-block; 
+    margin-left: 20px;
+    display: inline-block;
 }
 
 .h6, h6 {
@@ -185,10 +214,13 @@ table.light tr td {
 
 .jumbotron {
     padding: 1rem 1rem;
+    background: #1e1e1e;
+    border-radius: 10px;
 }
 
-.leaderboard{
+.leaderboard {
     max-width: 800px;
+    margin: 20px auto;
 }
 
 .market_buttons {
@@ -196,165 +228,134 @@ table.light tr td {
     bottom: -10px;
 }
 
-.ico_box{
-  display: inline-block;
-  height: 320px;  
-  background-color: #959595;
-  width: 100%;
-  border-radius: 5px;
-  padding: 5px;
-  background-image: url(..//images/ico2.png);
-  color: #ffffff;
+.ico_box {
+    display: inline-block;
+    height: 320px;
+    background-color: #424242;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    background-image: url('../images/ico2.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.ico_box h5{
-    margin: auto;
-    text-align: center
-  }
+.ico_box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
 
-.pull-mid{
+.ico_box h5, .ico_box h6 {
+    margin: auto;
+    text-align: center;
+}
+
+.pull-mid {
     text-align: center;
     display: inline-block;
-    width:100%;
+    width: 100%;
     margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top:10px;
+    padding: 20px;
 }
 
-.ico_box h6{
-    margin-top: 10px;
-    text-align: center
-}  
-
-.ico_countdown{
+.ico_countdown {
     margin: auto;
     text-align: center;
     display: inline-block;
     width: 100%;
     font-size: 30px;
-}  
-
-.ico_pot_eth
-{
-    margin: auto;
-    text-align: center;
-    display: inline-block;
-    width: 100%;  
+    color: #ff4081;
 }
 
-.ico_pot_yours
-{
+.ico_pot_eth, .ico_pot_yours {
     margin: auto;
     text-align: center;
     display: inline-block;
-    width: 100%;  
+    width: 100%;
+}
+
+.ico_pot_yours {
     font-size: 12px;
 }
 
-#left_pct{
-   display: inline-block; 
-   text-align: left;
-   width:33%;
-   font-size: 12px;
+#left_pct, #right_pct {
+    display: inline-block;
+    width: 33%;
+    font-size: 12px;
 }
 
-#demo{
-    display: inline-block; 
-    width:33%;
- }
+#left_pct {
+    text-align: left;
+}
 
- #right_pct{
-    display: inline-block; 
+#right_pct {
     text-align: right;
-    width:33%;
-    font-size: 12px;
- }
+}
 
+#demo {
+    display: inline-block;
+    width: 33%;
+}
 
- .ico_pot{
+.ico_pot {
     margin: auto;
     text-align: center;
     display: inline-block;
     width: 100%;
     font-size: 26px;
-    margin-top:-5px;
-}  
+    margin-top: -5px;
+}
 
-.ico_pot_under{
+.ico_pot_under {
     text-align: center;
     width: 100%;
     font-size: 13px;
-    margin-top:-5px;
-    margin-bottom:10px;
-}  
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
 
-.ico-progress
-{
-    width: 90%;  
+.ico-progress {
+    width: 90%;
     margin: auto;
 }
 
-.ico-buy-button
-{
-    margin-bottom:5px; 
+.ico-buy-button, #debug_newico {
+    margin-bottom: 5px;
 }
 
-#debug_newico
-{
-    margin-bottom:5px; 
+.green-background {
+    background-color: #006700;
 }
-
-.green-background{
-  background-color: #006700;  
-}
-
 
 .slidecontainer {
-    width: 100%; /* Width of the outside container */
+    width: 100%;
 }
 
-/* The slider itself */
 .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
+    -webkit-appearance: none;
     appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
-   background: #d3d3d3;  
-    outline: none; /* Remove outline */
-    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
     transition: opacity .8s;
     border-radius: 2px;
 }
 
-/* Mouse-over effects */
 .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
+    opacity: 1;
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+.slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
+    -webkit-appearance: none;
     appearance: none;
-    width: 15px; /* Set a specific slider handle width */
-    height: 15px; /* Slider handle height */
-    background:   #ffffff; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    cursor: pointer;
     border-radius: 50%;
 }
-
-.slider::-moz-range-thumb {
-    width: 15px; /* Set a specific slider handle width */
-    height: 15px; /* Slider handle height */
-    background:   #ffffff; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-    border-radius: 50%;
-}
-
-
-
-body{
-    min-width:1213px;        /* Suppose you want minimum width of 1000px */
-    width: auto !important;  /* Firefox will set width as auto */
- }
