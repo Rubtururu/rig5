@@ -336,6 +336,7 @@ table.light tr:hover td {
     color: #ff6f61;
 }
 
+/* ICO Pot Text */
 .ico_pot {
     margin: auto;
     text-align: center;
@@ -344,6 +345,9 @@ table.light tr:hover td {
     font-size: 26px;
     margin-top: -5px;
     color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61;
+    font-weight: bold;
 }
 
 .ico_pot_under {
