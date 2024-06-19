@@ -14,6 +14,11 @@ body {
 }
 
 /* Tables */
+table.light {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 table.light tr th:first-child {
     border-radius: 5px 0 0 0;
 }
@@ -29,14 +34,14 @@ table.light thead tr th {
     color: #ffffff;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 15px;
+    padding: 10px;
     border-bottom: 2px solid #ff6f61;
     box-shadow: 0 0 10px #ff6f61;
 }
 
 table.light tr td {
-    padding: 15px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 16px;
     color: #ffffff;
     font-weight: 700;
     background: rgba(255, 111, 97, 0.1);
@@ -81,7 +86,7 @@ table.light tr:hover td {
 
 /* Progress */
 .progress {
-    height: 1.5rem;
+    height: 2rem;
     background: #ff6f61;
     border-radius: 5px;
     overflow: hidden;
@@ -121,7 +126,7 @@ table.light tr:hover td {
 
 /* Cards */
 .card {
-    width: 15.5rem;
+    width: 20rem;
     margin: 10px;
     padding: 20px;
     background-color: #222;
@@ -153,14 +158,14 @@ table.light tr:hover td {
 .mining-anim {
     border-radius: 10px;
     background: linear-gradient(to right, #000, #444);
-    padding: 15px;
+    padding: 20px;
     width: 730px;
-    height: 430px;
+    height: 450px;
     display: inline-block;
     float: left;
     margin-bottom: 20px;
     color: #b0bec5;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
     box-shadow: 0 0 15px #00ff00;
@@ -208,7 +213,7 @@ table.light tr:hover td {
     color: #000;
     margin-bottom: 10px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
