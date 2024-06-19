@@ -327,7 +327,11 @@ table.light tr:hover td {
     width: 100%;
     font-size: 14px;
     color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de neón */
+    font-weight: bold;
 }
+
 
 #left_pct, #demo, #right_pct {
     display: inline-block;
