@@ -1,7 +1,7 @@
 /* General */
 body {
-    background-color: #1a1a1a;
-    color: #f0f0f0;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
     min-width: 1213px;
     width: auto !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,6 +31,7 @@ table.light thead tr th {
     text-transform: uppercase;
     padding: 15px;
     border-bottom: 2px solid #ff6f61;
+    box-shadow: 0 0 10px #ff6f61;
 }
 
 table.light tr td {
@@ -41,12 +42,12 @@ table.light tr td {
     background: rgba(255, 111, 97, 0.1);
     vertical-align: middle;
     border-bottom: 1px solid #444;
+    transition: background 0.3s, box-shadow 0.3s;
 }
 
-/* Table Hover Effect */
 table.light tr:hover td {
     background: rgba(255, 111, 97, 0.2);
-    transition: background 0.3s;
+    box-shadow: 0 0 10px #ff9e80;
 }
 
 /* Minestat Header */
@@ -69,11 +70,13 @@ table.light tr:hover td {
 .divider {
     margin: 20px 0;
     border-top: 2px solid #ff6f61;
+    box-shadow: 0 0 5px #ff6f61;
 }
 
 .divider_small {
     margin: 5px 0;
     border-top: 1px solid #ff9e80;
+    box-shadow: 0 0 5px #ff9e80;
 }
 
 /* Progress */
@@ -82,6 +85,7 @@ table.light tr:hover td {
     background: #ff6f61;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0 0 10px #ff6f61;
 }
 
 /* Buttons */
@@ -91,7 +95,7 @@ table.light tr:hover td {
     background-color: #ff6f61;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -100,6 +104,7 @@ table.light tr:hover td {
 .beauty_button:hover, .beauty_button_mid:hover, .beauty_button_big:hover {
     background-color: #ff9e80;
     transform: scale(1.05);
+    box-shadow: 0 0 15px #ff9e80;
 }
 
 .beauty_button {
@@ -119,7 +124,7 @@ table.light tr:hover td {
     width: 15.5rem;
     margin: 10px;
     padding: 20px;
-    background-color: #333;
+    background-color: #222;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     color: #ffffff;
@@ -127,7 +132,7 @@ table.light tr:hover td {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px #00ff00;
 }
 
 .owned_card {
@@ -158,6 +163,7 @@ table.light tr:hover td {
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
+    box-shadow: 0 0 15px #00ff00;
 }
 
 .console-text {
@@ -207,6 +213,7 @@ table.light tr:hover td {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    box-shadow: 0 0 10px #ffd54f;
 }
 
 /* Balance and Production */
@@ -214,14 +221,15 @@ table.light tr:hover td {
     font-weight: 800;
     font-size: 20px;
     color: #ff6f61;
+    text-shadow: 0 0 5px #ff6f61;
 }
 
 /* Claymore Colors */
-.claymore-green { color: #00e676; }
-.claymore-blue { color: #00b0ff; }
-.claymore-purple { color: #d500f9; }
-.claymore-gold { color: #ffab00; }
-.claymore-red { color: #ff1744; }
+.claymore-green { color: #00e676; text-shadow: 0 0 5px #00e676; }
+.claymore-blue { color: #00b0ff; text-shadow: 0 0 5px #00b0ff; }
+.claymore-purple { color: #d500f9; text-shadow: 0 0 5px #d500f9; }
+.claymore-gold { color: #ffab00; text-shadow: 0 0 5px #ffab00; }
+.claymore-red { color: #ff1744; text-shadow: 0 0 5px #ff1744; }
 
 /* System Stat */
 .system_stat {
@@ -241,7 +249,7 @@ table.light tr:hover td {
     padding: 2rem 2rem;
     background: #333;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 15px #00ff00;
     color: #ffffff;
 }
 
@@ -252,7 +260,7 @@ table.light tr:hover td {
     padding: 20px;
     background: #333;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 15px #00ff00;
     color: #ffffff;
 }
 
@@ -275,11 +283,12 @@ table.light tr:hover td {
     background-position: center;
     color: #ffffff;
     transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #ff6f61;
 }
 
 .ico_box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px #ff6f61;
 }
 
 .ico_box h5, .ico_box h6 {
@@ -302,6 +311,7 @@ table.light tr:hover td {
     width: 100%;
     font-size: 30px;
     color: #ff6f61;
+    text-shadow: 0 0 10px #ff6f61;
 }
 
 .ico_pot_eth, .ico_pot_yours {
@@ -346,6 +356,7 @@ table.light tr:hover td {
     height: 20px;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0 0 10px #ff6f61;
 }
 
 .ico-buy-button, #debug_newico {
@@ -386,4 +397,5 @@ table.light tr:hover td {
     background: #ff6f61;
     cursor: pointer;
     border-radius: 50%;
+    box-shadow: 0 0 5px #ff6f61;
 }
