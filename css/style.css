@@ -40,8 +40,8 @@ table.light thead tr th {
 }
 
 table.light tr td {
-    padding: 15px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 18px;
     color: #ffffff;
     font-weight: 700;
     background: rgba(255, 111, 97, 0.1);
@@ -58,7 +58,7 @@ table.light tr:hover td {
 /* Minestat Header */
 .minestat h3 {
     text-align: left;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
     padding: 10px 0;
     margin: 0 0 20px 0;
@@ -86,7 +86,7 @@ table.light tr:hover td {
 
 /* Progress */
 .progress {
-    height: 2rem;
+    height: 2.5rem;
     background: #ff6f61;
     border-radius: 5px;
     overflow: hidden;
@@ -95,13 +95,13 @@ table.light tr:hover td {
 
 /* Buttons */
 .beauty_button, .beauty_button_mid, .beauty_button_big {
-    padding: 20px;
+    padding: 25px;
     color: #ffffff;
     background-color: #ff6f61;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -128,13 +128,13 @@ table.light tr:hover td {
 .card {
     width: 20rem;
     margin: 10px;
-    padding: 30px;
+    padding: 40px;
     background-color: #222;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     color: #ffffff;
     height: auto;
-    min-height: 12rem;
+    min-height: 18rem;
 }
 
 .card:hover {
@@ -160,9 +160,9 @@ table.light tr:hover td {
 .mining-anim {
     border-radius: 10px;
     background: linear-gradient(to right, #000, #444);
-    padding: 20px;
-    width: 730px;
-    height: 470px;
+    padding: 30px;
+    width: 750px;
+    height: 500px;
     display: inline-block;
     float: left;
     margin-bottom: 20px;
@@ -175,7 +175,7 @@ table.light tr:hover td {
 
 .console-text {
     display: inline-block;
-    height: 250px;
+    height: 300px;
     color: #00ff00;
     overflow-y: scroll;
 }
@@ -218,7 +218,7 @@ table.light tr:hover td {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     box-shadow: 0 0 10px #ffd54f;
 }
@@ -226,7 +226,7 @@ table.light tr:hover td {
 /* Balance and Production */
 #balance, #prodPerSec {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 22px;
     color: #ff6f61;
     text-shadow: 0 0 5px #ff6f61;
 }
@@ -240,14 +240,14 @@ table.light tr:hover td {
 
 /* System Stat */
 .system_stat {
-    height: 240px;
+    height: 260px;
     margin-left: 20px;
     display: inline-block;
 }
 
 /* Headers */
 .h6, h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #ff6f61;
 }
 
@@ -264,7 +264,7 @@ table.light tr:hover td {
 .leaderboard {
     max-width: 800px;
     margin: 20px auto;
-    padding: 30px;
+    padding: 40px;
     background: #333;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 15px #00ff00;
@@ -280,11 +280,11 @@ table.light tr:hover td {
 /* ICO Box */
 .ico_box {
     display: inline-block;
-    height: 340px;
+    height: 380px;
     background-color: #555;
     width: 100%;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     background-image: url('../images/ico2.png');
     background-size: cover;
     background-position: center;
