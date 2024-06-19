@@ -189,7 +189,7 @@ table.light tr:hover td {
 .network-stat, .pvp-stat {
     display: inline-block;
     position: absolute;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
