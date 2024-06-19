@@ -210,16 +210,40 @@ table.light tr:hover td {
 /* Dos Mining */
 .dos-mining {
     width: 100%;
-    background-color: #ffd54f;
-    color: #000;
+    background-color: #222; /* Fondo más oscuro */
+    color: #ffd54f;
     margin-bottom: 10px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 20px; /* Más padding para un look más espacioso */
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 0 0 10px #ffd54f;
+    position: relative;
+    box-shadow: 0 0 20px #ffd54f; /* Sombra de neón más intensa */
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #ffd54f, 0 0 20px #ffd54f, 0 0 30px #ffd54f;
+    overflow: hidden; /* Oculta los desbordamientos */
+}
+
+.dos-mining::before, .dos-mining::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #ffd54f, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+.dos-mining::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+.dos-mining::after {
+    right: 0;
+    animation-delay: 1s;
 }
 
 /* Balance and Production */
@@ -227,8 +251,40 @@ table.light tr:hover td {
     font-weight: 800;
     font-size: 20px;
     color: #ff6f61;
-    text-shadow: 0 0 5px #ff6f61;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61; /* Sombra de neón más intensa */
+    position: relative;
 }
+
+#balance::before, #prodPerSec::before, #balance::after, #prodPerSec::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #ff6f61, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+#balance::before, #prodPerSec::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+#balance::after, #prodPerSec::after {
+    right: 0;
+    animation-delay: 1s;
+}
+
+@keyframes neon-border {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
 
 /* Claymore Colors */
 .claymore-green { color: #00e676; text-shadow: 0 0 5px #00e676; }
