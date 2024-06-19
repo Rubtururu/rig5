@@ -79,13 +79,33 @@ table.light tr:hover td {
     box-shadow: 0 0 5px #ff9e80;
 }
 
-/* Progress */
+/* Modern Progress Bar */
 .progress {
-    height: 1.5rem;
-    background: #ff6f61;
-    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 10px #ff6f61;
+    box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
+}
+
+.progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%; /* Adjust this width to represent the progress percentage */
+    background: linear-gradient(90deg, #00ff00, #00cc00);
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00cc00, 0 0 30px #00ff00;
+    animation: progress-animation 2s ease-out infinite;
+}
+
+@keyframes progress-animation {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
 }
 
 /* Buttons */
@@ -189,7 +209,7 @@ table.light tr:hover td {
 .network-stat, .pvp-stat {
     display: inline-block;
     position: absolute;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -198,65 +218,13 @@ table.light tr:hover td {
 }
 
 .network-stat {
-    width: 55%;
-    top: 0;
+    right: 0;
+    top: 100px;
 }
 
 .pvp-stat {
-    width: 40%;
     right: 0;
-}
-
-/* Dos Mining */
-.dos-mining {
-    width: 100%;
-    background-color: #ffd54f;
-    color: #000;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 0 10px #ffd54f;
-}
-
-/* Balance and Production */
-#balance, #prodPerSec {
-    font-weight: 800;
-    font-size: 20px;
-    color: #ff6f61;
-    text-shadow: 0 0 5px #ff6f61;
-}
-
-/* Claymore Colors */
-.claymore-green { color: #00e676; text-shadow: 0 0 5px #00e676; }
-.claymore-blue { color: #00b0ff; text-shadow: 0 0 5px #00b0ff; }
-.claymore-purple { color: #d500f9; text-shadow: 0 0 5px #d500f9; }
-.claymore-gold { color: #ffab00; text-shadow: 0 0 5px #ffab00; }
-.claymore-red { color: #ff1744; text-shadow: 0 0 5px #ff1744; }
-
-/* System Stat */
-.system_stat {
-    height: 220px;
-    margin-left: 20px;
-    display: inline-block;
-}
-
-/* Headers */
-.h6, h6 {
-    font-size: 1rem;
-    color: #ff6f61;
-}
-
-/* Jumbotron */
-.jumbotron {
-    padding: 2rem 2rem;
-    background: #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 15px #00ff00;
-    color: #ffffff;
+    top: 200px;
 }
 
 /* Leaderboard */
@@ -344,6 +312,9 @@ table.light tr:hover td {
     font-size: 26px;
     margin-top: -5px;
     color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61;
+    font-weight: bold;
 }
 
 .ico_pot_under {
