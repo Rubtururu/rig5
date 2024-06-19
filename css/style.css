@@ -34,13 +34,13 @@ table.light thead tr th {
     color: #ffffff;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 15px;
     border-bottom: 2px solid #ff6f61;
     box-shadow: 0 0 10px #ff6f61;
 }
 
 table.light tr td {
-    padding: 10px;
+    padding: 15px;
     font-size: 16px;
     color: #ffffff;
     font-weight: 700;
@@ -95,7 +95,7 @@ table.light tr:hover td {
 
 /* Buttons */
 .beauty_button, .beauty_button_mid, .beauty_button_big {
-    padding: 15px;
+    padding: 20px;
     color: #ffffff;
     background-color: #ff6f61;
     border: none;
@@ -128,11 +128,13 @@ table.light tr:hover td {
 .card {
     width: 20rem;
     margin: 10px;
-    padding: 20px;
+    padding: 30px;
     background-color: #222;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     color: #ffffff;
+    height: auto;
+    min-height: 12rem;
 }
 
 .card:hover {
@@ -160,7 +162,7 @@ table.light tr:hover td {
     background: linear-gradient(to right, #000, #444);
     padding: 20px;
     width: 730px;
-    height: 450px;
+    height: 470px;
     display: inline-block;
     float: left;
     margin-bottom: 20px;
@@ -173,7 +175,7 @@ table.light tr:hover td {
 
 .console-text {
     display: inline-block;
-    height: 230px;
+    height: 250px;
     color: #00ff00;
     overflow-y: scroll;
 }
@@ -213,7 +215,7 @@ table.light tr:hover td {
     color: #000;
     margin-bottom: 10px;
     margin-top: 10px;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
@@ -238,7 +240,7 @@ table.light tr:hover td {
 
 /* System Stat */
 .system_stat {
-    height: 220px;
+    height: 240px;
     margin-left: 20px;
     display: inline-block;
 }
@@ -251,7 +253,7 @@ table.light tr:hover td {
 
 /* Jumbotron */
 .jumbotron {
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
     background: #333;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 15px #00ff00;
@@ -262,7 +264,7 @@ table.light tr:hover td {
 .leaderboard {
     max-width: 800px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px;
     background: #333;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 15px #00ff00;
@@ -278,11 +280,11 @@ table.light tr:hover td {
 /* ICO Box */
 .ico_box {
     display: inline-block;
-    height: 320px;
+    height: 340px;
     background-color: #555;
     width: 100%;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     background-image: url('../images/ico2.png');
     background-size: cover;
     background-position: center;
@@ -358,7 +360,7 @@ table.light tr:hover td {
     width: 90%;
     margin: auto;
     background: #ff6f61;
-    height: 20px;
+    height: 25px;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 10px #ff6f61;
