@@ -189,6 +189,12 @@ table.light tr:hover td {
 .network-stat, .pvp-stat {
     display: inline-block;
     position: absolute;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
 }
 
 .network-stat {
