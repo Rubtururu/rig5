@@ -264,7 +264,7 @@ table.light tr:hover td {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #1a1a1a; /* Color de fondo más oscuro */
+    background: #003084; /* Color de fondo más oscuro */
     border-radius: 15px; /* Bordes más redondeados */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 20px #003084; /* Sombra de neón verde más intensa */
     color: #ffffff;
