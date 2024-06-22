@@ -396,9 +396,6 @@ function generate_leaderboard()
             content+= "<tr>"+
             "<td style='text-align: left'>"+game.leaderboard[index][18]+"</td>"+ 
             "<td style='text-align: center'>"+show_big_values(game.leaderboard[index][17])+"</td>"+
-            "<td style='text-align: center'>"+show_big_values(game.leaderboard[index][19])+"</td>"+
-            "<td style='text-align: center'>"+show_big_values(game.leaderboard[index][20])+"</td>"+
-            "<td style='text-align: center'>"+button+"</td>"+
             "</tr>";
     }
 
