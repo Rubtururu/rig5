@@ -427,9 +427,39 @@ table.light tr:hover td {
 #left_pct, #demo, #right_pct {
     display: inline-block;
     width: 33%;
-    font-size: 12px;
+    font-size: 16px; /* Tamaño de letra más grande */
     color: #ff6f61;
+    text-align: center; /* Alineación centrada */
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61; /* Sombra de neón */
+    position: relative;
+    padding: 10px; /* Añade padding para más espacio */
+    box-shadow: 0 0 15px #ff6f61; /* Sombra de neón */
+    border-radius: 10px; /* Bordes redondeados */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
 }
+
+#left_pct::before, #demo::before, #right_pct::before, #left_pct::after, #demo::after, #right_pct::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #ff6f61, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+#left_pct::before, #demo::before, #right_pct::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+#left_pct::after, #demo::after, #right_pct::after {
+    right: 0;
+    animation-delay: 1s;
+}
+
 
 /* ICO Pot Text */
 .ico_pot {
