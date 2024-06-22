@@ -3,60 +3,7 @@ body {
     background-color: #0d0d0d;
     color: #e0e0e0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .minestat h3 {
-        font-size: 20px;
-        padding: 5px 0;
-    }
-    .marketplace {
-        padding-bottom: 50px;
-    }
-    .card {
-        width: 100%;
-        margin: 10px 0;
-        padding: 15px;
-    }
-    .mining-anim {
-        width: 100%;
-        height: auto;
-    }
-    .dos-mining {
-        font-size: 16px;
-        padding: 10px;
-    }
-    .ico_box {
-        height: auto;
-    }
-    .slider {
-        height: 10px;
-    }
-    .beauty_button, .beauty_button_mid, .beauty_button_big {
-        width: 100%;
-    }
-    .system_stat {
-        height: auto;
-        margin-left: 0;
-    }
-    #left_pct, #demo, #right_pct {
-        font-size: 14px;
-        padding: 5px;
-    }
-    .ico_pot {
-        font-size: 20px;
-    }
-    .ico_pot_under {
-        font-size: 14px;
-        padding: 5px;
-    }
-    .leaderboard {
-        max-width: 100%;
-    }
 }
 
 /* Logo */
@@ -150,6 +97,8 @@ table.light tr:hover td {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    width: auto;
+    margin-bottom: 10px;
 }
 
 .beauty_button:hover, .beauty_button_mid:hover, .beauty_button_big:hover {
@@ -238,7 +187,7 @@ table.light tr:hover td {
     border-radius: 10px;
     background: linear-gradient(to right, #000, #444);
     padding: 15px;
-    width: 730px;
+    width: 100%;
     height: 480px;
     display: inline-block;
     float: left;
@@ -294,125 +243,130 @@ table.light tr:hover td {
 /* Dos Mining */
 .dos-mining {
     width: 100%;
-    background-color: #ffffff;
-    color: #0d0d0d;
-    height: 320px;
-    padding: 20px;
-    text-align: left;
-    border-radius: 10px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-/* Slider */
-.slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 20px;
-    background: #d32f2f;
-    outline: none;
-    opacity: 0.8;
-    transition: opacity 0.2s;
-    border-radius: 5px;
-}
-
-.slider:hover {
-    opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background: #ffd54f;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background: #ffd54f;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-/* Ico Box */
-.ico_box {
-    background: linear-gradient(45deg, #d32f2f, #ff6659);
-    width: 100px;
-    height: 150px;
-    border-radius: 5px;
-    display: inline-block;
-    box-shadow: 0 0 10px #ff6659;
-}
-
-.ico_box:hover {
-    box-shadow: 0 0 20px #ff6659;
-}
-
-/* System Stat */
-.system_stat {
-    border-radius: 10px;
-    height: 200px;
-    margin-left: 10px;
-    box-shadow: 0 0 10px #ff6f61;
-}
-
-/* PCT */
-#left_pct, #demo, #right_pct {
-    padding: 20px;
-    font-size: 18px;
-}
-
-/* ICO Pot */
-.ico_pot {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 15px;
+    background-color: #222; /* Fondo más oscuro */
     color: #ffd54f;
-    text-shadow: 2px 2px #444;
-}
-
-.ico_pot_under {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px; /* Más padding para un look más espacioso */
+    border-radius: 10px;
+    text-align: center;
     font-size: 20px;
-    padding: 10px;
-    color: #ffd54f;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0 0 20px #ffd54f; /* Sombra de neón más intensa */
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #ffd54f, 0 0 20px #ffd54f, 0 0 30px #ffd54f;
+    overflow: hidden; /* Oculta los desbordamientos */
 }
 
-/* Leaderboard */
-.leaderboard {
-    border-radius: 10px;
-    width: 85%;
-    max-width: 1200px;
-    margin: 20px auto;
+.dos-mining::before, .dos-mining::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #ffd54f, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+.dos-mining::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+.dos-mining::after {
+    right: 0;
+    animation-delay: 1s;
+}
+
+/* Balance and Production */
+#balance, #prodPerSec {
+    font-weight: 800;
+    font-size: 20px;
+    color: #ffd54f; /* Color dorado */
+    text-shadow: 0 0 10px #ffd54f, 0 0 20px #ffd54f, 0 0 30px #ffd54f; /* Sombra de neón */
+}
+
+/* Footer */
+.footer {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     box-shadow: 0 0 10px #ff6f61;
 }
 
-.leaderboard header {
-    padding: 15px;
-    border-bottom: 2px solid #ff6f61;
-    background-color: #333;
+.footer a {
     color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.leaderboard .body {
-    padding: 15px;
+.footer a:hover {
+    color: #ff9e80;
 }
 
-.leaderboard table {
-    width: 100%;
-    border-collapse: collapse;
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .beauty_button, .beauty_button_mid, .beauty_button_big {
+        width: 97%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .mining-anim {
+        height: auto;
+    }
+
+    .network-stat, .pvp-stat {
+        width: 100%;
+        position: relative;
+    }
+
+    .static-anim {
+        position: relative;
+    }
+
+    .dos-mining {
+        width: 100%;
+    }
+
+    #balance, #prodPerSec {
+        font-size: 16px;
+    }
 }
 
-.leaderboard th, .leaderboard td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #444;
-    color: #ffffff;
+@media only screen and (max-width: 480px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .beauty_button, .beauty_button_mid, .beauty_button_big {
+        font-size: 14px;
+    }
+
+    .mining-anim {
+        height: auto;
+    }
+
+    .network-stat, .pvp-stat {
+        font-size: 12px;
+    }
+
+    .dos-mining {
+        font-size: 16px;
+    }
+
+    #balance, #prodPerSec {
+        font-size: 14px;
+    }
 }
 
-.leaderboard tr:hover {
-    background-color: rgba(255, 111, 97, 0.2);
-}
+
+   
