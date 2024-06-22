@@ -4,6 +4,7 @@ body {
     color: #e0e0e0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    margin: 0; /* Elimina el margen predeterminado */
 }
 
 /* Logo */
@@ -97,17 +98,6 @@ table.light tr:hover td {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    width: auto;
-    margin-bottom: 10px;
-}
-
-.beauty_button:hover, .beauty_button_mid:hover, .beauty_button_big:hover {
-    background-color: #ff9e80;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #ff9e80;
-}
-
-.beauty_button {
     width: 48%;
 }
 
@@ -117,6 +107,12 @@ table.light tr:hover td {
 
 .beauty_button_big {
     width: 97%;
+}
+
+.beauty_button:hover, .beauty_button_mid:hover, .beauty_button_big:hover {
+    background-color: #ff9e80;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff9e80;
 }
 
 /* Cards */
@@ -187,7 +183,7 @@ table.light tr:hover td {
     border-radius: 10px;
     background: linear-gradient(to right, #000, #444);
     padding: 15px;
-    width: 100%;
+    width: 730px;
     height: 480px;
     display: inline-block;
     float: left;
@@ -243,20 +239,20 @@ table.light tr:hover td {
 /* Dos Mining */
 .dos-mining {
     width: 100%;
-    background-color: #222; /* Fondo más oscuro */
+    background-color: #222;
     color: #ffd54f;
     margin-bottom: 10px;
     margin-top: 10px;
-    padding: 20px; /* Más padding para un look más espacioso */
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    box-shadow: 0 0 20px #ffd54f; /* Sombra de neón más intensa */
-    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    box-shadow: 0 0 20px #ffd54f;
+    font-family: 'Courier New', Courier, monospace;
     text-shadow: 0 0 10px #ffd54f, 0 0 20px #ffd54f, 0 0 30px #ffd54f;
-    overflow: hidden; /* Oculta los desbordamientos */
+    overflow: hidden;
 }
 
 .dos-mining::before, .dos-mining::after {
@@ -283,21 +279,89 @@ table.light tr:hover td {
 #balance, #prodPerSec {
     font-weight: 800;
     font-size: 20px;
-    color: #ffd54f; /* Color dorado */
-    text-shadow: 0 0 10px #ffd54f, 0 0 20px #ffd54f, 0 0 30px #ffd54f; /* Sombra de neón */
+    color: #ff6f61;
+    font    -family: 'Courier New', Courier, monospace;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .beauty_button, .beauty_button_mid, .beauty_button_big {
+        width: 100%;
+    }
+    .mining-anim {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+    .mining-anim {
+        width: 100%;
+    }
+    .dos-mining {
+        font-size: 16px;
+    }
+    .network-stat, .pvp-stat {
+        font-size: 14px;
+    }
+}
+
+/* Hover effects */
+a:hover {
+    color: #ff9e80;
+}
+
+/* Form styles */
+form {
+    margin: 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ff6f61;
+    border-radius: 5px;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    width: calc(100% - 22px); /* Ajuste de ancho */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"] {
+    padding: 15px;
+    border: none;
+    background-color: #ff6f61;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff9e80;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff9e80;
 }
 
 /* Footer */
 .footer {
-    background-color: #0d0d0d;
-    color: #e0e0e0;
     text-align: center;
     padding: 20px 0;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
     font-size: 14px;
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 0 10px #ff6f61;
+    z-index: 1000; /* Para asegurar que esté sobre todo */
+    box-shadow: 0 0 15px #444;
 }
 
 .footer a {
@@ -310,63 +374,42 @@ table.light tr:hover td {
     color: #ff9e80;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-    .beauty_button, .beauty_button_mid, .beauty_button_big {
-        width: 97%;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .mining-anim {
-        height: auto;
-    }
-
-    .network-stat, .pvp-stat {
-        width: 100%;
-        position: relative;
-    }
-
-    .static-anim {
-        position: relative;
-    }
-
-    .dos-mining {
-        width: 100%;
-    }
-
-    #balance, #prodPerSec {
-        font-size: 16px;
-    }
+/* Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); /* Fondo semi-transparente */
 }
 
-@media only screen and (max-width: 480px) {
-    .logo img {
-        width: 80px;
-    }
-
-    .beauty_button, .beauty_button_mid, .beauty_button_big {
-        font-size: 14px;
-    }
-
-    .mining-anim {
-        height: auto;
-    }
-
-    .network-stat, .pvp-stat {
-        font-size: 12px;
-    }
-
-    .dos-mining {
-        font-size: 16px;
-    }
-
-    #balance, #prodPerSec {
-        font-size: 14px;
-    }
+.modal-content {
+    background-color: #0d0d0d;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ff6f61;
+    width: 80%;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.close {
+    color: #ff6f61;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
-   
+.close:hover,
+.close:focus {
+    color: #ff9e80;
+    text-decoration: none;
+    cursor: pointer;
+}
+
