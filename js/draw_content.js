@@ -45,8 +45,6 @@ function update_dash_slow()
     var daily_income =  parseInt(game.prodPerSec)*86400;
     $('#prodPerDay').html(show_big_values(daily_income)+" /day");
 
-    $('#attackpower').html(game.attackpower);
-    $('#defensepower').html(game.defensepower);
 
     // SUPER BLOCK BUTTON SHOW/HIDE
             if(game.time >= game.nextjackpot && game.time>0)
