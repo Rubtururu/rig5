@@ -124,30 +124,64 @@ table.light tr:hover td {
     width: 15.5rem;
     margin: 10px;
     padding: 20px;
-    background-color: #222;
-    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    border-radius: 15px; /* Bordes más redondeados */
     transition: transform 0.3s, box-shadow 0.3s;
     color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    position: relative;
+    box-shadow: 0 0 15px #00ff00; /* Sombra de neón */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px #00ff00;
+    transform: translateY(-10px); /* Más elevación al hacer hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px #00ff00; /* Sombra de neón más intensa */
+}
+
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #00ff00, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+.card::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+.card::after {
+    right: 0;
+    animation-delay: 1s;
 }
 
 .owned_card {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 16px;
-    padding: 4px;
+    font-size: 14px;
+    padding: 4px 8px; /* Ajuste de padding */
     color: #ffffff;
     background-color: #555;
     display: block;
-    width: 42px;
-    height: 30px;
     border-radius: 0 0 10px 0;
+    text-shadow: 0 0 5px #ffffff; /* Sombra de texto de neón */
+    box-shadow: 0 0 10px #555; /* Sombra de neón para owned_card */
 }
+
+@keyframes neon-border {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
 
 /* Mining Animation */
 .mining-anim {
