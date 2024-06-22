@@ -49,16 +49,8 @@ game.networkhash = 0;
 game.hasbooster = false;
 game.boosterprice = 0;
 
-// PVP
-game.attackpower = 0;
-game.defensepower = 0;
-game.immunityTime = 0;
-game.exhaustTime = 0;
 
-game.attacker = [];
 
-game.countdownimmune = "";
-game.countdownexhaust = "";
 game.leaderboard = [];
 
 window.windowage = 0;
@@ -98,30 +90,6 @@ function minerdata (error, result)
 
 
 
-function pvpdata (error, result)
-{
-        if(!error)
-        {
-          /*  GetPVPData(address addr) public constant returns (uint attackpower, uint defensepower, uint immunityTime, uint exhaustTime,
-                uint[3] attacker, uint[3] defender)*/
-
-                game.attackpower = result[0].toNumber();
-                game.defensepower = result[1].toNumber();
-                game.immunityTime = result[2].toNumber();
-                game.exhaustTime = result[3].toNumber();
-
-                let attacker = result[4].toString()
-                game.attacker = attacker.split(",");
-
-            for (let index = 0; index < result.length; index++) {
-              console.log('PVP Data - Index: '+index+" Value: "+result[index].toString());
-              }  
-        } 
-        else
-        {
-            console.log(error);
-        }
-};
 
 
 
